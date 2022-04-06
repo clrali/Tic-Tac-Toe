@@ -1,5 +1,5 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
+    font: 20px Monaco, monospace;
     margin: 20px;
   }
   
@@ -18,18 +18,29 @@ body {
   }
   
   .square {
-    background: #fff;
+    background: rgb(189, 213, 156);
     border: 1px solid #999;
     float: left;
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 50px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 50px;
+  }
+
+  button {
+    background-color: rgb(217, 178, 233);
+    border: 1px solid;
+    padding: 15px; 
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    font: 15px Monaco, monospace;
+    cursor: pointer;
   }
   
   .square:focus {

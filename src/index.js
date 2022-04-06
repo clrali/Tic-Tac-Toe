@@ -3,23 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function Square(props) {
-      return (
-        <button
-        className="square" 
-        onClick={props.onClick}
-        >
-          {props.value}
-        </button>
-      );
+    return (
+      <button
+      className="square" 
+      onClick={props.onClick}
+      >
+        {props.value}
+      </button>
+    );
   }
   
   class Board extends React.Component {
-     renderSquare(i) {
-      return <Square 
-      value={this.props.squares[i]}
-      onClick={() => this.props.onClick(i)} 
-      />;
-    }
+    renderSquare(i) {
+    return (
+      <Square 
+        value={this.props.squares[i]}
+        onClick={() => this.props.onClick(i)} 
+      />
+    );
+  }
   
     render() {
       return (
@@ -48,9 +50,11 @@ function Square(props) {
     constructor(props) {
       super(props);
       this.state = {
-        history: [{
+        history: [
+          {
           squares: Array(9).fill(null)
-        }],
+          }
+        ],
         stepNumber: 0,
         xIsNext: true
       };
@@ -65,9 +69,11 @@ function Square(props) {
       }
       squares[i] = this.state.xIsNext ? 'X' : 'O'; 
       this.setState({
-        history: history.concat([{
+        history: history.concat([
+          {
           squares: squares
-        }]),       
+          }
+        ]),       
         stepNumber: history.length,   
         xIsNext: !this.state.xIsNext
       });
@@ -87,13 +93,13 @@ function Square(props) {
 
       const moves = history.map((step, move) => {
         const desc = move ? 
-        "Go to move #" + move : 
-        "Go to game start";
+        "Go to move " + move : 
+        "Restart game";
         return (
-          <li key={move}>
+          <ul key={move}>
             <button onClick={() =>
             this.jumpTo(move)}>{desc}</button>
-          </li>
+          </ul>
         );
       });
 
@@ -103,6 +109,7 @@ function Square(props) {
       } else {
         status = "Next player: " + (this.state.xIsNext ? "X" : "O");
       }
+
       return (
         <div className="game">
           <div className="game-board">
@@ -110,7 +117,7 @@ function Square(props) {
             squares={current.squares}
             onClick={(i) => this.handleClick(i)}
             />
-          </div>cd 
+          </div>
           <div className="game-info">
             <div>{status}</div>
             <ol>{moves}</ol>
