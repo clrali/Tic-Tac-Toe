@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('myFont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.game {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 20px;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+}

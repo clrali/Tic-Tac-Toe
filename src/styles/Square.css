@@ -1,0 +1,132 @@
+.yellowSquare {
+    background-image: url("../../public/images/board-square-yellow.jpg");
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
+
+.yellowSquare:hover {
+    transform: scale(1.05);
+}
+
+.yellowSquare.no-hover {
+    transform: scale(1.0);
+}
+
+.greenSquare {
+    background-image: url("../../public/images/board-square-green.jpg");
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
+
+.greenSquare:hover {
+    transform: scale(1.05);
+}
+
+.greenSquare.no-hover {
+    transform: scale(1.0);
+}
+
+.squareButton {
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    margin: 20px;
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.wobble {
+    animation: wobble 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.maruko {
+    opacity: 100;
+    background-image: url("../../public/images/maruko-chan-piece.png");
+    background-color: transparent;
+    border-width: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 110px;
+    width: 110px;
+}
+
+.maruko.maruko-win {
+    background-image: url("../../public/images/maruko-chan-win.png");
+    animation: fadeIn 0.5s ease-out;
+}
+
+
+.maruko.maruko-lost {
+    background-image: url("../../public/images/maruko-chan-lost.png");
+}
+
+.tama {
+    opacity: 100;
+    background-image: url("../../public/images/tama-chan-piece.png");
+    background-color: transparent;
+    border-width: 0;
+    background-size: contain;
+    height: 110px;
+    width: 110px;
+    float: center;
+}
+
+.tama.tama-win {
+    background-image: url("../../public/images/tama-chan-win.png");
+    animation: fadeIn 0.5s ease-out;
+}
+
+.tama.tama-lost {
+    background-image: url("../../public/images/tama-chan-lost.png");
+}

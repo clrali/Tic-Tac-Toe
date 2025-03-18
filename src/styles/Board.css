@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('myFont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.status {
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    font-size: xx-large;
+    padding-top: 5px;
+    margin: 5px;
+}
