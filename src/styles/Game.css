@@ -9,9 +9,64 @@
     margin: 50px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board {
+    background-color: #FFF2BC;
+    width: 490px;
+    height: 520px;
+    border: 5px solid #F8D958;
+    border-radius: 5%;
+}
+
+.background-image {
+    background-image: url("../../public/images/start-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.history-padding {
+    margin-left: 40px;
+    background-color: #FFF2BC;
+    width: 295px;
+    height: 485px;
+    border-radius: 5%;
+    border: 5px solid #F8D958;
 }
 
 .game-info {
-    margin-left: 20px;
+    margin: 20px;
+    width: 255px;
+    height: 445px;
     font-family: 'MyCustomFont', Arial, sans-serif;
+    background-image: url("../../public/images/history-bg.jpg");
+    background-size: cover;
+    opacity: 100;
+    border-radius: 5%;
+}
+
+.status-background {
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.status-button {
+    border-width: 0px;
+    background-color: transparent;
+    text-align: center;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 50;
+}
+
+.status-button:hover {
+    transform: scale(1.05);
+    opacity: 75%;
 }
