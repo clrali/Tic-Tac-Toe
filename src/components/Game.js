@@ -27,8 +27,8 @@ export default function Game() {
         }
 
         return <>
-            <div className="statusBackground" key={move}>
-                <button className="status" onClick={() => jumpTo(move)}>{description}</button>
+            <div className="status-background" key={move}>
+                <button className="status-button" onClick={() => jumpTo(move)}>{description}</button>
             </div>
         </>
     }
@@ -39,12 +39,16 @@ export default function Game() {
     }
 
     return <>
-        <div className="game">
-            <div className="game-board">
-                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-            </div>
-            <div key={moves} className="game-info">
-                <ol>{moves}</ol>
+        <div className="background-image">
+            <div className="game">
+                <div className="game-board">
+                    <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+                </div>
+                <div className="history-padding">
+                    <div key={moves} className="game-info">
+                        <p>{moves}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </>

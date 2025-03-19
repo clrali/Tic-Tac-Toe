@@ -14,6 +14,13 @@
 .status {
     font-family: 'MyCustomFont', Arial, sans-serif;
     font-size: xx-large;
-    padding-top: 5px;
+    padding-top: 10px;
     margin: 5px;
+    text-align: center;
+    height: 30px;
+}
+
+.board {
+    margin-left: 20px;
+    margin-top: 10px;
 }
