@@ -1,0 +1,54 @@
+.dummy-board-background {
+    margin: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dummy-board-highlight {
+    background-color: #FFF2BC;
+    width: 490px;
+    height: 520px;
+    border: 5px solid #F8D958;
+    border-radius: 5%;
+}
+
+.dummy-board {
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.dummy-yellow-square {
+    background-image: url("../../public/images/board-square-yellow.jpg");
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
+
+.dummy-yellow-square.trigger:hover {
+    transform: scale(1.05);
+}
+
+.dummy-green-square {
+    background-image: url("../../public/images/board-square-green.jpg");
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+}
