@@ -15,7 +15,6 @@ export default function Game() {
     }
 
     const moves = history.map((squares, move) => {
-        console.log("squares ", squares)
         var description;
         if (move === currentMove && move > 0) {
             description = "you are at move " + move;
@@ -46,7 +45,7 @@ export default function Game() {
                 </div>
                 <div className="history-padding">
                     <div key={moves} className="game-info">
-                        <p>{moves}</p>
+                        <div>{moves}</div>
                     </div>
                 </div>
             </div>

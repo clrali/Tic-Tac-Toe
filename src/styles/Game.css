@@ -6,7 +6,7 @@
 }
 
 .game {
-    margin: 50px;
+    margin: 75px;
     display: flex;
     flex-direction: row;
     justify-content: center;
