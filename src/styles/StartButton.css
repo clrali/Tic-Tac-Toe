@@ -20,3 +20,20 @@
 .start-game:hover {
     transform: scale(1.05);
 }
+
+.home-button {
+    margin: 10px;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    opacity: 100;
+    border-width: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button:hover {
+    transform: scale(1.05);
+}
