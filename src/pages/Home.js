@@ -22,7 +22,7 @@ export default function Home() {
                             <div className={greenBoardPiece}>
                             </div>
                             <div className={`trigger ${yellowBoardPiece}`}>
-                                <StartButton to="tic-tac-toe" />
+                                <StartButton to="tic-tac-toe" className="start-button" />
                             </div>
                             <div className={greenBoardPiece}>
                             </div>

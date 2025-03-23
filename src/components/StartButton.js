@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import "../styles/StartButton.css"
 
-export default function StartButton({ to }) {
+export default function StartButton({ to, className }) {
     const navigate = useNavigate();
 
     function handleClick(to) {
@@ -9,8 +9,8 @@ export default function StartButton({ to }) {
     }
 
     return <>
-        <button className="start-button" onClick={() => handleClick(to)}>
-            {to === '' ? "home" : "start"}
+        <button className={className} onClick={() => handleClick(to)}>
+            {to === 'home' ? "home" : "start"}
         </button>
     </>
 

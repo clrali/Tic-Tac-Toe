@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Board } from "./Board";
 import "../styles/Game.css"
+import StartButton from "./StartButton";
 
 export default function Game() {
     const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -44,6 +45,7 @@ export default function Game() {
                     <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
                 </div>
                 <div className="history-padding">
+                    <StartButton to="home" className="home-button" />
                     <div key={moves} className="game-info">
                         <div>{moves}</div>
                     </div>

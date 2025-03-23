@@ -39,12 +39,15 @@
     height: 485px;
     border-radius: 5%;
     border: 5px solid #F8D958;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .game-info {
-    margin: 20px;
     width: 255px;
-    height: 445px;
+    height: 410px;
     font-family: 'MyCustomFont', Arial, sans-serif;
     background-image: url("../../public/images/history-bg.jpg");
     background-size: cover;
